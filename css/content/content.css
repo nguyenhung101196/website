@@ -1,0 +1,86 @@
+
+#content{
+   
+}
+
+#slidedown-outer-wrap{
+     float: left;
+    width: 100%;
+    height: 100%;
+
+}
+#myCarousel{
+    position: relative;
+    float: left;
+}
+.item img{
+    width: 1140px;
+}
+
+.delivers-message{
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+.delivers-message h2,a,h6{
+    text-align: center;
+}
+.delivers-message a{
+    text-decoration: none;
+}
+.delivers-message h2{
+    font-size: 1.7em;
+}
+.delivers-message h6{
+    font-family:sans-serif;
+    color: #747474;
+   
+}
+.outstanding-advantages{
+    width: 100%;
+    float:left;
+    background-color:#effaf7;
+}
+.advantages-box{
+    width: 30%;
+    padding: 10px;
+    float: left;
+    margin-left:28px;
+    text-align: center;
+}
+.advantages-box a{
+    text-decoration: none;  
+}
+.advantages-box a h4{
+    padding-top: 10px;
+       font-size: 16px;
+    color: #16a791;
+}
+.advantages-box p{
+    color: #676767;
+}
+
+#feautured-collections{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+ div.col-md-3 {
+     padding: 0;
+    margin: 10px;
+    margin-left: 70px;
+   border-bottom: 1px solid #b6b6b6;
+}
+.collections-image-wrap img{
+    width: 100%;
+    height: 100%;
+}
+.collections-info{
+    margin-top: 5px;
+}
+.collections-info a{
+    text-decoration: none;
+    color: #16a791;
+    font-size: 15.5px;
+}

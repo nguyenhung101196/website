@@ -1,0 +1,116 @@
+.page-title{
+    width: 100%;
+
+}
+.show-desktop{
+    width: 100%;
+
+}
+.collection-title-image{
+   margin: 0;
+   padding: 0;
+}
+.collection-title-image p{
+    position:relative;
+    top: 5.5em;
+    padding: 10px;
+    background:rgba(84, 167, 146, 0.8);
+    color: #fff;
+    font-size: 1.7em;
+}
+.collection-title-image p{
+    text-align: center;
+}
+.collection-title-image img{
+    width: 100%;
+}
+
+.collection-description-text p{
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    color: #5f5f5f;
+}
+.collection-description-readmore span{
+    color:#16a791;
+    font-size: 16px;
+    cursor: pointer;
+}
+.clearfix{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+    
+}
+.list-clearfix-filter{
+    padding: 10px;
+    
+    float: right;
+    
+}
+.collection-content ul.clearfix-filter{
+   
+}
+.collection-content ul.clearfix-filter li{
+    float: left;
+    margin-left: 20px;
+   
+}
+.collection-content ul.clearfix-filter li label{
+    color: #7e7e7e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.collection-content ul.clearfix-filter li select{
+    padding: 5px;
+}
+
+.product-list{
+    width: 100%;
+
+}
+.product-list ul li{
+    float: left;
+    display: block;
+}
+.product-image-wrapper{
+    height: 340px;
+    width: 265px;
+    margin:10px 10px 10px 10px;
+    padding: 10px;
+   border-bottom:1px solid #b7b7b7;
+   text-align: center;
+    background-color:#fff;
+    
+}
+.product-image-wrapper:hover .product-info a span{    
+     animation:jump 1s ease forwards; 
+     
+}
+    .product-info{
+        margin-top: 10px;
+    }
+.product-info a{
+    text-decoration: none;
+    color: #787878;
+}
+.product-info a span{
+    position: relative;
+   bottom: -30px;
+    opacity: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.product-image-wrapper img{
+    width: 100%;
+}
+
+@keyframes jump{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(30px);
+        bottom: 0px;
+        opacity: 1;
+        }
+}

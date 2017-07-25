@@ -1,0 +1,236 @@
+
+<link rel="stylesheet" href="../css/clearance/clearance.css">
+
+
+<div id="content" class="collection has-pagination container" data-ng-controller="myCtrl-selectdata-clearance">
+    <div class="page-title has-description">
+        <div class="show-desktop">
+            <div class="collection-title-image">
+                <p>
+                    Clearance 
+                </p>
+                <img src="../images/Collages7_1024x1024.jpg" alt="">
+            </div>  
+            <div class="collection-description-text">
+                <p>
+                    We are getting a lot of all new items this spring and we need to make room.
+                     We have marked down hundreds of pieces 25% to 75% off. Check out our Clearance
+                      Sale in store and online, while quantities last!
+                </p>
+            </div> 
+            <div class="collection-description-readmore">
+                <span>
+                    Read more
+                </span>
+            </div> 
+            <div class="collection-content" id="collection-content">
+               <div class="clearfix">
+                     <div class="list-clearfix-filter">  
+                        <ul class="clearfix-filter">
+                            <li>
+                                <label for="type">Type</label>
+                                <select name="type" id="sl-type">
+                                    <option value="all">All</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="price">Price</label>
+                                <select name="price" id="sl-price">
+                                    <option value="all">All</option>
+                                    <option value="under-$100">Under $100</option>
+                                    <option value="$100-$200">$100 - $250</option>
+                                    <option value="$250-$500">$250 - $500</option>
+                                    <option value="over-$500">Over $500</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="sortby">Sort by</label>
+                                <select name="sortby" id="sl-sortby">
+                                    <option value="price-low-to-high">Price: Low to High</option>
+                                    <option value="price-high-to-low">Price: High to Low</option>
+                                    <option value="alphabetically-from-a-to-z">Alphabetically: A - Z</option>
+                                    <option value="alphabetically-from-z-to-a">Alphabetically: Z - A</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+                <div class="product-list clearfix">
+                    
+                    <ul>
+                        <li  data-ng-repeat="clearance in data">
+                            
+                            <div class="product-image-wrapper">
+                                <a href="#!product/product-name">
+                                   
+                                      <img data-ng-src="../images/{{clearance.image}}" alt="">  
+                                </a>
+                                <div class="product-info">
+                                <a href="#!product/product-name">
+                                      <p>{{clearance.name_pro}}</p> 
+                                    <span>${{clearance.price}}</span> 
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <!-- <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/8_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Agnes Cabinet, Dark Natural</p>
+                                    <span>$444</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/243862_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Aluminum Bobble Candlesticks, Set of 3, Pewter</p>
+                                    <span>$35</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/201954_1_c10b893d-8601-4411-b7ad-c86df241243d_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Aluminum Fretwork Round Accent Table,Aluminum</p>
+                                    <span>$128</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/217634_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                               <a href="">
+                                    <p>Aluminum Fretwork Round Accent Table, Antique Bronze</p>
+                                    <span>$128</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/230176_0bcc7369-14c9-40bb-bc78-d5312b306ffa_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                              <a href="">
+                                    <p>Antique Barrister Bookcase, Natural</p>
+                                    <span>$777</span>
+                                </a>
+                            </div>
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/248881_228_-_Bonito_Chair_-_Dark_Mahogany_2_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Bonito Dining Chair, Dark</p>
+                                    <span>$97</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/219010_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Aurora Accent Table, Dark Brown</p>
+                                    <span>$144</span>
+                                </a>
+                            </div>
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/139_-_Balai_Table_-_Espresso_2_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Balai Table, Espresso</p>
+                                    <span>$157</span>
+                                </a>
+                            </div>
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/248911_232_-_Live_Edge_Coffee_Table_-_Walnut_1_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Batak Live Edge Coffee Table, Walnut</p>
+                                    <span>$146</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/22322_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Batts Iron &amp; Wood Work Stool</p>
+                                    <span>$98</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/215852_side_large.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Bilbo COnsole, Grey Distress</p>
+                                    <span>$234</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li> -->
+                    </ul>
+                </div>
+            </div>       
+        </div>
+    </div>
+</div>

@@ -1,0 +1,237 @@
+
+<link rel="stylesheet" href="../css/product content/product-content.css">
+
+
+<div id="content" class="collection has-pagination container" data-ng-controller="myCtrl-selectdata-bedroom">
+    <div class="page-title has-description">
+        <div class="show-desktop">
+            <div class="collection-title-image">
+                <p>
+                   Bedroom Furniture
+                </p>
+                <img src="../images/Bedroom-Cat-Banner_1024x1024.jpeg" alt="">
+            </div>  
+            <div class="collection-description-text">
+                <p>
+                        At Wrightwood we avoid the typical matching brown bedroom sets 
+                        simply because they don’t set the right tone. A bedroom should 
+                        evoke intimacy and coziness and create a room that’s versatile.
+                        It's important to us that we give you the opportunity to bring
+                        color into your space with a variety of beds, headboards, chests,
+                        dressers, bedside tables, nightstands, and benches. You just won't
+                        find a Chicago bedroom furniture collection like ours!
+                </p>
+            </div> 
+            <div class="collection-description-readmore">
+                <span>
+                    Read more
+                </span>
+            </div> 
+            <div class="collection-content" id="collection-content">
+               <div class="clearfix">
+                     <div class="list-clearfix-filter">  
+                        <ul class="clearfix-filter">
+                            <li>
+                                <label for="type">Type</label>
+                                <select name="type" id="sl-type">
+                                    <option value="all">All</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="price">Price</label>
+                                <select name="price" id="sl-price">
+                                    <option value="all">All</option>
+                                    <option value="under-$100">Under $100</option>
+                                    <option value="$100-$200">$100 - $250</option>
+                                    <option value="$250-$500">$250 - $500</option>
+                                    <option value="over-$500">Over $500</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="sortby">Sort by</label>
+                                <select name="sortby" id="sl-sortby">
+                                    <option value="price-low-to-high">Price: Low to High</option>
+                                    <option value="price-high-to-low">Price: High to Low</option>
+                                    <option value="alphabetically-from-a-to-z">Alphabetically: A - Z</option>
+                                    <option value="alphabetically-from-z-to-a">Alphabetically: Z - A</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+                <div class="product-list clearfix">
+                    <ul>
+                        <li data-ng-repeat="bedroom in data">
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/{{bedroom.image}}" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>{{bedroom.name_pro}}</p>
+                                    <span>${{bedroom.price}}</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <!-- <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/217634_large_3.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Aluminum Fretwork Round Accent Table, Aluminum</p>
+                                    <span>$128</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/217627_large_4.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Aluminum Bobble Aluminum Fretwork Round Accent Table, Antique Bronze</p>
+                                    <span>$128</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/230350_2_large_5.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Aluminum Fretwork Round Accent Table,Antique Gold</p>
+                                    <span>$128</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/242087-H041_large_6.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                               <a href="">
+                                    <p>Army trunk</p>
+                                    <span>$100</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/221020_Live_Edge_-_Walnut2_DS_large_7.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                              <a href="">
+                                    <p>Asteria Iron Side Table</p>
+                                    <span>$193</span>
+                                </a>
+                            </div>
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/105_Coffee_Table_-_Gray_Wash_1_large_8.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Atlas Bench, Walnut</p>
+                                    <span>$194</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/105_Coffee_Table_-_walnut_1_large_9.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Atlas Coffee Table, Gray Wash</p>
+                                    <span>$222</span>
+                                </a>
+                            </div>
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/247_-_Modern_Nightstand_3_Drawers_-_Espresso_2_252765_large_10.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Atlas Coffee Table, Walnut</p>
+                                    <span>$222</span>
+                                </a>
+                            </div>
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/247_-_Modern_Nightstand_3_Drawers_-_Light_Mahogany_2_251768_large_11.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Austin Nightstand, Espresso</p>
+                                    <span>$246</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/216_-_Bali_Chest_-_Espresso_2_251294_large_12.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Austin Nightstand,ight Mahogany</p>
+                                    <span>$246</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/bedroom/248782_216_-_Bali_Chest_Drawer_-_Gray_Wash_1_large_13.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Bali 4 Drawer Chest, Espresso</p>
+                                    <span>$527</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li> -->
+                    </ul>
+                </div>
+            </div>       
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+#page-banner{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #54a792;
+}
+
+#page-banner-container{
+    width:100%;
+    padding-top: 5px;
+    max-width:940px;
+    color: white;
+}
+#page-banner-container span a{
+    color: white;
+    text-decoration:none;
+}
+.account-details p a{
+    color: white;
+}
+.cart-details p a{
+    text-decoration: none;
+    color: white;
+}

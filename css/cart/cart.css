@@ -1,0 +1,25 @@
+#breadcrumb-navgation{
+    padding: 3px;
+    background-color:#f4f4f4;   
+}
+#breadcrumb-navgation a{
+    text-decoration: none;
+    color: #16a791;
+}
+.subtitle{
+    padding: 15px;
+}
+.subtitle h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.subtitle .nav-btn{
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 27.5em;
+    font-size: 16px;
+    border:1px solid #c4c4c4;
+    color: #16a791;
+    text-transform: uppercase;
+}

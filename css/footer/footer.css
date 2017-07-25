@@ -1,0 +1,128 @@
+.contact-information{
+   
+    text-align: center;
+    border-top: 1px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2;
+    margin-bottom: 10px;
+    font-family: Helvetica, Arial, sans-serif !important;
+    margin-top: 40px;
+}
+.contact-information a{
+    text-decoration: none;
+    color: #8a8a8a;
+}
+.singup-box{
+    text-align: center;
+    padding: 10px;
+}
+.singup-box p{
+    color: #16a791;
+    font-size:0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 15px;
+}
+.singup-box #contact-email{
+    border:1px solid #d2d2d2;
+    outline: none;
+    padding: 3px;
+    border-right: 0px;
+}
+.singup-box #email-sm{
+    padding: 3px;
+    margin-left:-5px;
+    background-color: #16a791;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border:1px solid  #16a791;
+    outline: none;
+    border-left: 0px;
+    
+}
+
+.footer-tools{
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 10px;
+    height: 255px;
+}
+.menu-bottom{
+    width: 100%;
+    padding: 20px;
+    float: left;
+}
+.menu-bottom ul li{
+    float:left;
+}
+.menu-bottom ul li a{
+    padding:10px 18px 10px 18px;
+    border-right:1px solid #d4d4d4;
+    text-decoration: none;
+    color: #16a791;
+}
+.menu-bottom ul li a#mn-f{
+    border-right: 0px;
+}
+.social-icons{
+    padding-top: 10px;
+    padding-left: 41%;
+}
+.social-icons ul li {
+    float:left;
+}
+.social-icons ul li a i{
+    color: black;
+    font-size: 1.8em;
+    padding: 10px;
+    opacity: 0.5;
+    transition: .2s;
+}
+.social-icons ul li a i:hover{
+    opacity: 1;
+}
+.payment-options{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+.payment-options ul li{
+   display: inline;
+}
+.payment-options ul li a img{
+    width: 60px;
+    height: 60px;
+    opacity: 0.7;
+    transition: .2s;
+}
+.payment-options ul li a img:hover{
+    opacity: 1;
+}
+#yelp-biz-badge-fsc-Oi6o6Bzpuen8456U4JFUGA{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 65px;
+}
+.promo-footer-wrapper{
+    width: 100%;
+    
+}
+.promo-text{
+    text-align: center;
+    font-size: 20px;
+    color: #828282;
+    padding: 15px;
+   border-top: 1px solid #d4d4d4;
+   position: fixed;
+   width: 100%;
+   bottom: 0;
+   overflow: hidden;
+    background-color: #fff;
+}
+.promo-text a{
+    text-transform:uppercase;
+    background-color: #ff4040;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+}

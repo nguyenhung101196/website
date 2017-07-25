@@ -1,0 +1,63 @@
+
+<link rel="stylesheet" href="../css/wisepop/wise_pop.css">
+
+<div class="wise-pop">
+    <a href="" id="wisepopclose" class="wise-pop-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <div class="wise-pop-content">
+        <div class="sub-title">
+            <h2>Join Our Newsletter</h2>
+            <h3>Be the first to know about new shippments.</h3>
+        </div>
+    </div>
+    <div class="wise-pop-form">
+        <input type="email" class="txt txtem" id="email" name="email">
+        <input type="submit" class="sm-signup" id="sm-signup" name="email-sm" value="Sign Up">
+
+    </div>
+    <div class="image-wise-pop">
+        <img src="../images/b0459e06af04a1a201ca01f3eb6d4020.png" alt="">
+    </div>
+    <div class="text-sub">
+            <p>
+                * We guarantee 100% privacy. Your informartion will not be shared.*
+            </p>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+
+        // setTimeout 
+        setTimeout(function() {
+            $('.wise-pop').hide(function() {
+                $('#page-banner, header, #content, #footer').css({
+                    opacity:1,
+                    pointerEvents:'initial'
+                });
+            });
+        },10000);
+
+
+        // class wise-pop show 
+        if($('.wise-pop').show()){
+            $('#page-banner, header, #content,#footer').css({
+                opacity:'.5',
+                pointerEvents:'none'
+            });
+            $('.wise-pop').css({
+                opacity:1
+            });
+        }
+
+        //  events click of class wise-pop-close
+        $('.wise-pop-close').click(function() {
+           $('.wise-pop').hide(function() {
+                $('#page-banner, header, #content,#footer').css({
+                    opacity:'1',
+                    pointerEvents:'initial'
+                });
+                 
+           });
+        });
+
+    });
+</script>

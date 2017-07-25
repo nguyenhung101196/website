@@ -1,0 +1,237 @@
+
+<link rel="stylesheet" href="../css/product content/product-content.css">
+
+
+<div id="content" class="collection has-pagination container" data-ng-controller="myCtrl-selectdata-family-living-room">
+    <div class="page-title has-description">
+        <div class="show-desktop">
+            <div class="collection-title-image">
+                <p>
+                   Family and Living Room Furniture
+                </p>
+                <img src="../images/FamilyLiving-Cat-Banner_1024x1024.jpg" alt="">
+            </div>  
+            <div class="collection-description-text">
+                <p>
+                        Family and living rooms are the most social parts of your home.
+                        You want to create a comfortable environment for your guests and family,
+                        but you also want the furniture to speak to your individual aesthetic.
+                        At Wrightwood Furniture, we have a wide assortment of unique living room
+                        furniture pieces that you can mix and match to create your ideal look. 
+                        From rustic living room furniture to more contemporary designs, we will 
+                        work with you to make your dream living room a reality!
+                </p>
+            </div> 
+            <div class="collection-description-readmore">
+                <span>
+                    Read more
+                </span>
+            </div> 
+            <div class="collection-content" id="collection-content">
+               <div class="clearfix">
+                     <div class="list-clearfix-filter">  
+                        <ul class="clearfix-filter">
+                            <li>
+                                <label for="type">Type</label>
+                                <select name="type" id="sl-type" class="sl">
+                                    <option value="all">All</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="price">Price</label>
+                                <select name="price" id="sl-price" class="sl">
+                                    <option value="all">All</option>
+                                    <option value="under-$100">Under $100</option>
+                                    <option value="$100-$200">$100 - $250</option>
+                                    <option value="$250-$500">$250 - $500</option>
+                                    <option value="over-$500">Over $500</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="sortby">Sort by</label>
+                                <select name="sortby" id="sl-sortby"  class="sl">
+                                    <option value="price-low-to-high">Price: Low to High</option>
+                                    <option value="price-high-to-low">Price: High to Low</option>
+                                    <option value="alphabetically-from-a-to-z">Alphabetically: A - Z</option>
+                                    <option value="alphabetically-from-z-to-a">Alphabetically: Z - A</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+                <div class="product-list clearfix">
+                    <ul>
+                        <li data-ng-repeat="fml_r in data">
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img data-ng-src="../images/family-living-room/{{fml_r.image}}" alt="">
+                                </a>
+                                <div class="product-info">
+                                    <a href="">
+                                        <p>{{fml_r.name_pro}}</p>
+                                        <span>${{fml_r.price}}</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <!-- <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/202630_large_3.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>8 Drawer Console, Natural Limewash</p>
+                                    <span>$244</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/215593_large_4.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>9 Compartment Rack, Dark Antique</p>
+                                    <span>$277</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/215609_large_5.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>9 Compartment Rack, Grey Distress</p>
+                                    <span>$277</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/222416_Stool_Box_Alenka2_111_large_6.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                               <a href="">
+                                    <p>Alenka Stump, Honey</p>
+                                    <span>$130</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/SH-MP-227_large_7.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                              <a href="">
+                                    <p>Alnico ABC Sideboard with Drawers, Honey</p>
+                                    <span>$798</span>
+                                </a>
+                            </div>
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/312_-_ABC_Dresser_-_Gray_Wash_1_258309_large_8.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Alphabet Dresser, Gray Wash</p>
+                                    <span>$596</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/243862_large_9.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Aluminum Bibble Candlesticks, Set of 3, Pewter</p>
+                                    <span>$35</span>
+                                </a>
+                            </div>
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/201954_1_c10b893d-8601-4411-b7ad-c86df241243d_large_10.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Aluminum Fretwork Round Accent Table, Aluminum</p>
+                                    <span>$128</span>
+                                </a>
+                            </div>
+                            </div>
+                           
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/217634_large_11.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Aluminum Fretwoek Round Accent Table, Antique Bronze</p>
+                                    <span>$128</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/217627_large_12.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Aluminum Fretwork Round Accent Table, Antique Gold</p>
+                                    <span>$128</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="product-image-wrapper">
+                                <a href="#">
+                                    <img src="../images/family-living-room/252482_large_13.jpg" alt="">
+                                </a>
+                                <div class="product-info">
+                                <a href="">
+                                    <p>Annie Wooden Media Stand, Black</p>
+                                    <span>$689</span>
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </li> -->
+                    </ul>
+                </div>
+            </div>       
+        </div>
+    </div>
+</div>
